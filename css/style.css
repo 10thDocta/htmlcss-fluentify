@@ -118,12 +118,31 @@ body {
 }
 
 /* main-center */
-.main-center {}
+.main-center {
+  text-align: center;
+}
+
+.main-center hr {
+  width: 60px;
+  margin: 15px auto;
+}
 
 .col-left, .col-center, .col-right {
-  height: 500px;
   float: left;
   width: 33.33%;
-  background-color: red;
-  border: 1px solid blue;
+  padding: 25px 15px 35px 15px;
+  background-color: whitesmoke;
+}
+
+.main-center img {
+  height: 150px;
+}
+
+.main-center .text h3 {
+  margin-top: 15px;
+  color: #7CBB02
+}
+
+.main-center .text p {
+  color: #808080;
 }
