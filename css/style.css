@@ -68,7 +68,7 @@ body {
   border: 1px solid whitesmoke
 }
 
-.button-green a {
+.nav-right.button-green a {
   background-color: #7CBB02;
 }
 
@@ -81,16 +81,49 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: whitesmoke;
+  padding-top: 4px;
 }
 
 .cont-header-bottom .text-container {
   text-align: left;
+  height: inherit;
+  width: 25%;
+}
+
+.text-container .button-green {
+  display: inline-block;
+  background-color: #7CBB02;
+  padding: 14px 25px;
+  border-radius: 5px;
+  margin-top: 14px
 }
 
 .text-container .button-green a {
   color: whitesmoke;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 16px 40px;
-  border-radius: 5px;
+}
+
+/* main */
+/* main-top */
+.main-top {
+  background-color: #D3D3D3;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.main-top p {
+  margin-top: 10px;
+  color: #939393
+}
+
+/* main-center */
+.main-center {}
+
+.col-left, .col-center, .col-right {
+  height: 500px;
+  float: left;
+  width: 33.33%;
+  background-color: red;
+  border: 1px solid blue;
 }
