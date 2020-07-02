@@ -8,6 +8,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.box {
+  padding: 0 100px;
+}
+
 /* header-top */
 .cont-header-top {
   background-color: #0C325A;
@@ -68,7 +72,7 @@ body {
   border: 1px solid whitesmoke
 }
 
-.nav-right.button-green a {
+.nav-right .button-green a {
   background-color: #7CBB02;
 }
 
@@ -87,7 +91,7 @@ body {
 .cont-header-bottom .text-container {
   text-align: left;
   height: inherit;
-  width: 25%;
+  width: 40%;
 }
 
 .text-container .button-green {
