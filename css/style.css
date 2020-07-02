@@ -8,14 +8,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/* inizio header */
-.header-top {
+/* header-top */
+.cont-header-top {
   background-color: #0C325A;
   height: 50px;
   text-align: center;
 }
 
-.header-top::after {
+.cont-header-top::after {
   content: "";
   display: table;
   clear: both;
@@ -58,6 +58,7 @@ body {
   text-align: right;
 }
 
+/* menu destro bottoni*/
 .nav-right .button-blank a, .nav-right .button-green a {
   padding: 6px 20px;
   border-radius: 5px;
@@ -67,6 +68,29 @@ body {
   border: 1px solid whitesmoke
 }
 
-.nav-right .button-green a {
+.button-green a {
   background-color: #7CBB02;
+}
+
+/* header-bottom */
+.cont-header-bottom {
+  background-color: #0C325A;
+  height: calc(100vh - 50px);
+  background-image: url(../img/background-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: whitesmoke;
+}
+
+.cont-header-bottom .text-container {
+  text-align: left;
+}
+
+.text-container .button-green a {
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 40px;
+  border-radius: 5px;
 }
