@@ -13,13 +13,12 @@ body {
 }
 
 /* header-top */
-.cont-header-top {
+.header-top {
   background-color: #0C325A;
-  height: 50px;
   text-align: center;
 }
 
-.cont-header-top::after {
+.header-top::after {
   content: "";
   display: table;
   clear: both;
@@ -45,11 +44,11 @@ body {
   display: inline-block;
   list-style: none;
   line-height: 50px;
-  margin: 0 7px;
+  margin: 0 6px;
 }
 
 .menu-inline li a {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: whitesmoke;
   text-decoration: none;
@@ -64,7 +63,7 @@ body {
 
 /* menu destro bottoni*/
 .nav-right .button-blank a, .nav-right .button-green a {
-  padding: 6px 20px;
+  padding: 6px 10px;
   border-radius: 5px;
 }
 
@@ -77,21 +76,28 @@ body {
 }
 
 /* header-bottom */
-.cont-header-bottom {
+.header-bottom {
   background-color: #0C325A;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 53px);
   background-image: url(../img/background-header.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: whitesmoke;
   padding-top: 4px;
+  position: relative;
 }
 
-.cont-header-bottom .text-container {
+.header-bottom .text-container {
   text-align: left;
-  height: inherit;
-  width: 40%;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header-bottom .text-container h1 {
+  font-size: 35px;
 }
 
 .text-container .button-green {
@@ -113,7 +119,7 @@ body {
 .main-top {
   background-color: #D3D3D3;
   text-align: center;
-  padding: 25px 0;
+  padding: 35px 0;
 }
 
 .main-top p {
@@ -132,32 +138,42 @@ body {
   clear: both;
 }
 
+.main-center .col-left, .main-center .col-center, .main-center .col-right {
+  float: left;
+  width: 33.33%;
+  padding: 40px 15px 35px 15px;
+  background-color: white;
+}
+
 .main-center hr {
   width: 60px;
   margin: 15px auto;
 }
 
-.main-center .col-left, .main-center .col-center, .main-center .col-right {
-  float: left;
-  width: 33.33%;
-  padding: 25px 15px 35px 15px;
-  background-color: white;
-}
-
-.main-center img {
+.img-container-center img {
   height: 150px;
 }
 
-.main-center .text h3 {
+.main-center .text-container h3 {
   margin-top: 15px;
   color: #7CBB02
 }
 
-.main-center .text p {
+.main-center .text-container p {
   color: #808080;
 }
 
+/* hr-center */
+.hr-center {
+  width: 90%;
+  margin: auto;
+}
+
 /* main-bottom */
+.main-bottom {
+  margin-top: 20px;
+}
+
 .main-bottom::after {
   content: "";
   display: table;
